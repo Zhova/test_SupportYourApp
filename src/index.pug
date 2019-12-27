@@ -16,14 +16,15 @@ html
 					+e.square.blue
 					+e.square.rose
 					+e.square.green
-				h1 QCRM
-				p by SupportYourApp
-				form(action="#")
-					input(class="field" type="text" placeholder="Login")
-					input(class="field" type="password" placeholder="Password")
-					input(id="checkbox" type="checkbox")
-					label(for="checkbox") Remember me on this computer
-					input(class="button" type="button" value="Sign In to QCRM") 
+				+b.form
+					h1 QCRM
+					p by SupportYourApp
+					form(action="#")
+						input(class="field" type="text" placeholder="Login")
+						input(class="field" type="password" placeholder="Password")
+						input(id="checkbox" type="checkbox")
+						label(for="checkbox") Remember me on this computer
+						input(class="button" type="button" value="Sign In to QCRM") 
 
 		script(type="text/javascript" src="js/all_libs.js")
 		script(type="text/javascript" src="js/all_js.js")
