@@ -5,10 +5,20 @@ body
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif
 	font-weight: lighter
 
+.fading
+	width: 100vw
+	height: 100vh
+	background-color: #e5e5e5
+	position: absolute
+	top: 0
+	left: 0
+	opacity: 0
+	animation: fading 2s linear
+
 .container
 	width: 100vw
 	height: 100vh
-	background-image: url("../img/background-1.jpg")
+	background-image: url("../img/background-2.jpg")
 	background-size: cover
 	background-repeat: no-repeat
 	display: flex 
@@ -110,8 +120,7 @@ body
 					justify-content: center
 					align-items: center
 					padding-top: 2px
-
-
+					border: 1px solid grey
 	
 		.button
 			background-color: #3e9ffd
@@ -120,6 +129,10 @@ body
 			color: white
 			height: 44px
 			font-size: 15px
+			cursor: pointer
+
+			&:hover
+				filter: brightness(0.95)
 
 .logo
 	width: 107px
@@ -167,6 +180,15 @@ body
 		bottom: 16px
 		right: 32px
 		animation: green .7s 
+
+
+@keyframes fading 
+	0%
+		opacity: 1
+	70%
+		opacity: 1	
+	100% 
+		opacity: 0
 
 @keyframes rotateForm 
 	from 

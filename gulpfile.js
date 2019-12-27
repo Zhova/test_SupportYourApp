@@ -99,6 +99,7 @@ function Watch() {
 	gulp.watch('./src/**/*.pug', Html);
 	gulp.watch('./src/css/**/*.sass', Styles);
 	gulp.watch('./src/js/**/*.js', Script);
+	gulp.watch('./src/img/**', Script);
 }
 
 function Clean() {
