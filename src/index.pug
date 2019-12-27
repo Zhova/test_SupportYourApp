@@ -1,0 +1,29 @@
+include bemto/bemto.pug
+//- include _partials
+doctype html 
+html
+	head
+		title test
+		link(rel="stylesheet" type="text/css" href="css/all_style.css")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+	body
+		+b.container
+			+b.login
+				+b.logo
+					+e.square.orange
+					+e.square.blue
+					+e.square.rose
+					+e.square.green
+				h1 QCRM
+				p by SupportYourApp
+				form(action="#")
+					input(class="field" type="text" placeholder="Login")
+					input(class="field" type="password" placeholder="Password")
+					input(id="checkbox" type="checkbox")
+					label(for="checkbox") Remember me on this computer
+					input(class="button" type="button" value="Sign In to QCRM") 
+
+		script(type="text/javascript" src="js/all_libs.js")
+		script(type="text/javascript" src="js/all_js.js")
