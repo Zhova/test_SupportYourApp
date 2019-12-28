@@ -1,20 +1,97 @@
+// =============== large
 
-// // =============== large
+@media screen and (min-width: 1500px)
+	.login
+		transform: scale(1.7)
 
-// @media screen and (min-width: 1800px)
-// 	body
-// 		background-color: #880
-// =============== mobile
+	.form
+		form
+			label
+				font-size: 16px
+				
+			#checkbox + label
+				padding: 6px 0 0 33px
 
-// @media screen and (max-width: 767px)
+				&:before
+					width: 20px
+					height: 20px
 
-// 	*, *:after, *:before
-// 		box-sizing: border-box
 
-	
-// // =============== tablet 
 
-// @media screen and (max-width: 1199px) and (min-width: 375px)
-// 	*, *:after, *:before
-// 		box-sizing: border-box
+// =============== tablet 
+
+@media screen and (max-width: 1199px)
+	.login
+		max-width: 70%
+
+	.form
+		max-width: 100%
+
+		form
+			label
+				font-size: 16px
+				
+			#checkbox + label
+				padding: 10px 0 0 45px
+
+				&:before
+					width: 30px
+					height: 30px
+
+
+//=============== mobile
+
+@media screen and (max-width: 767px)
+	.login
+		max-width: 90%
+
+	.form
+		form
+			label
+				font-size: 12px
+				
+			#checkbox + label
+				padding: 7px 0 0 33px
+
+				&:before
+					width: 20px
+					height: 20px
+				
+
+@media screen and (orientation: landscape) and (max-width: 767px)
+	.login 
+		max-width: initial
+		width: 100%
+		height: 100vh
+
+		.logo
+			top: 10px
+			left: 43px
+			transform: scale(0.6)
+	.form
+		width: 100%
+		padding-top: 15px
+		margin-top: 0
+
+		form
+			label
+				font-size: 16px
+				
+			#checkbox + label
+				padding: 4px 0 0 33px
+
+				&:before
+					left: 6px
+		p
+			margin-bottom: 15px
+
+		form
+
+			input
+				margin-bottom: 15px
+			label
+				margin-bottom: 15px
+
+			
+
 

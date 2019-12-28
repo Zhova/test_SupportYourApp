@@ -2,8 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   //create variable with starting time
-  var startTime = (new Date().getHours() + 8) % 24;
-  console.log(startTime); //check if user in page at 00 minutes
+  var startTime = (new Date().getHours() + 8) % 24; //check if user in page at 00 minutes
 
   if (new Date().getMinutes() == 0) {
     myScript();
@@ -18,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (date.getMinutes() == 0 && date.getHours() == startTime) {
       startTime = (startTime + 8) % 24;
       changeBg();
-    } //add setTimeout function, it checking every 30s if condition if correct  		
+    } //adding setTimeout function, it checking every 1 min if condition is correct  		
 
 
-    setTimeout(checkTime, 3000);
+    setTimeout(checkTime, 10000);
   } //changing background
 
 
