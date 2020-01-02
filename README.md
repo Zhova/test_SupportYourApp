@@ -3,8 +3,9 @@ Markup was maked with pixelPerfect & bemto metodology and with love for rerspons
 I used gulp toolkit with Pug & SASS<br /> 
 All of the animations was maked by CSS3<br />
 I did't use any JS libraries, just clean JS<br /><br />
+Two solutions for changing background<br />
 
-For the first: install node modules<br />
+  For the first: install node modules<br />
 
 <b>npm install</b><br /><br />
 
